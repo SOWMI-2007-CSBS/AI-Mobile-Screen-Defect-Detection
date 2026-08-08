@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Detection Result</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+text-align:center;
+}
+
+h1{
+color:#1565c0;
+}
+
+img{
+width:500px;
+margin-top:20px;
+border:3px solid #333;
+border-radius:10px;
+}
+
+.result{
+font-size:24px;
+margin-top:20px;
+font-weight:bold;
+color:green;
+}
+
+.conf{
+font-size:20px;
+color:#444;
+margin-bottom:20px;
+}
+
+a{
+text-decoration:none;
+background:#1565c0;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Detection Result</h1>
+
+<div class="result">
+Detected Defect : {{ defect }}
+</div>
+
+<div class="conf">
+Confidence : {{ confidence }} %
+</div>
+
+<img src="{{ image_path }}">
+
+<br><br>
+
+<a href="/">Detect Another Image</a>
+
+</body>
+
+</html>

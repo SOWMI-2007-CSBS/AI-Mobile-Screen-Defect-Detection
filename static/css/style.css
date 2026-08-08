@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f2f7ff;
+}
+
+.container{
+    width:600px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    color:#0066cc;
+}
+
+p{
+    color:#555;
+}
+
+input[type=file]{
+    margin:20px;
+}
+
+button{
+    background:#0025cc;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004c99;
+}

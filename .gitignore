@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+
+# Dataset
+dataset/
+
+# YOLO training outputs
+runs/
+
+# YOLO pretrained model
+yolov8n.pt
+
+# Uploaded images
+static/uploads/
+static/results/
+
+# Cache files
+*.cache
+
+# IDE
+.vscode/

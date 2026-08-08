@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Mobile Screen Defect Detection</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Mobile Screen Defect Detection</h1>
+
+    <p>Upload a mobile screen image to detect cracks and defects.</p>
+
+    <form action="/detect" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="image" id="imageInput" accept="image/*" required>
+
+        <br><br>
+
+        <img id="preview"
+             src=""
+             width="350"
+             style="display:none; border-radius:10px; border:2px solid #ccc;">
+
+        <br><br>
+
+        <button type="submit">Detect Defect</button>
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
