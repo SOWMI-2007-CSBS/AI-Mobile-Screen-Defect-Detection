@@ -7,8 +7,7 @@ import shutil
 app = Flask(__name__)
 
 # Load trained model
-model = YOLO("runs/detect/train-4/weights/best.pt")
-
+model = YOLO("models/best.pt")
 
 @app.route("/")
 def home():
